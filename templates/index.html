@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Form</title>
+</head>
+<body>
+    <h1>Submit Your Info</h1>
+    <form action="/submit" method="POST">    <!--"form action" that specifies upon submission and its value specifies-->  
+        <label for="name">Name:</label>      <!-- the route defined in main app written in python to rendor template "result.html -->
+        <input type="text" id="name" name="name2"><br><br>   <!-- /submit represents a relative URL. It usually refers to a specific route on the server where the form's data will be processed. -->   
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email2"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
